@@ -14,8 +14,11 @@ dependencies = [
     "minisearch>=1.0.1",
     "minsearch>=0.2.0",
     "openai>=3.17.0",
+    "pydantic-ai>=2.49.0",
     "python-frontmatter>=1.3.0",
     "requests>=2.34.2",
+    "toyaikit>=0.0.11",
+    "toykit",
 ]
  
 [project.scripts]
@@ -24,3 +27,11 @@ ai-engineering-buildcamp-codespaces = "ai_engineering_buildcamp_codespaces:main"
 [build-system]
 requires = ["uv_build>=0.12.17,<0.13.0"]
 build-backend = "uv_build"
+
+[tool.uv.workspace]
+members = [
+    "toykit",
+]
+
+[tool.uv.sources]
+toykit = { workspace = true }

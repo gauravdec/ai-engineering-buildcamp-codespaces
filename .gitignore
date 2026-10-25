@@ -19,6 +19,12 @@ dist/
 # Jupyter
 .ipynb_checkpoints/
 
+# Markdown
+*.md
+
+# PDFs
+*.pdf
+
 # VS Code
 .vscode/
 
